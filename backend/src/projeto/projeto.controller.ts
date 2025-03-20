@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { ProjetoProvider } from './projeto.prisma';
 
 @Controller('projetos')
@@ -7,6 +7,10 @@ export class ProjetoController {
     @Get()
     async obterTodos() {
         return await this.proj.obterTodos();
+    }
+    @Get(":id")
+    async obterPorId(@Param('id') id:string) {
+        return await this.proj.obterUm(Number(id));
     }
     @Get('destaques')
     async obterDestaques() {
