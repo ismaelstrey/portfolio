@@ -5,3 +5,7 @@ DATABASE_URL="postgresql://postgres.atdewfomsizqjwavsyyj:nh7z6rgAwbFqoW2M@aws-0-
 
 # Direct connection to the database. Used for migrations.
 DIRECT_URL="postgresql://postgres.atdewfomsizqjwavsyyj:nh7z6rgAwbFqoW2M@aws-0-us-west-1.pooler.supabase.com:5432/postgres"
+
+
+
+nest g pr prisma.provider --no-spec --flat
