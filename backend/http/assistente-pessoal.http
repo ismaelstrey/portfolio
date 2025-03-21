@@ -1,0 +1,16 @@
+POST https://strey.app.n8n.cloud/webhook-test/40919fa7-c5e9-44dd-8351-6aa9484bce94
+Content-Type: application/json
+
+{
+    "chatId":"12345678910",
+    "menssagem":"Vc trabalha com reactive native?"
+}
+
+####
+POST https://strey.app.n8n.cloud/webhook/40919fa7-c5e9-44dd-8351-6aa9484bce94
+Content-Type: application/json
+
+{
+    "chatId":"123456789102",
+    "menssagem":"Vc trabalha com reactive native?"
+}
