@@ -9,11 +9,11 @@ export function Header() {
 
     
   return (
-    <header className="flex justify-center h-16">    
-   <Container className="flex-1 flex justify-between items-end">
+    <header className="flex justify-center h-20 w-full bg-black/50">    
+   <Container className="flex-1 flex justify-between items-end my-2">
          <div className="flex gap-10 items-end justify-end">
             <Link href="/" className="hidden sm:block"> 
-            <Image className="h-auto w-auto" src="/logo.svg" alt="logo" width={100} height={100} priority/></Link> 
+            <Image className="h-auto w-auto" src="/logo.svg" placeholder="blur" blurDataURL="/blur.jpeg" alt="logo" width={100} height={100} priority/></Link> 
             <Menu/>        
         </div>
       <div className="hidden sm:flex items-center">

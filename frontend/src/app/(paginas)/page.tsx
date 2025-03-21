@@ -1,9 +1,9 @@
 
-import { Header } from "@/components/chat/shared/Header";
-
-
+import Principal from "@/components/Landing/Principal";
 export default function Home() {
   return (
-<span>Oi</span>
+<div>
+<Principal/>
+</div>
   );
 }
