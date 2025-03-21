@@ -8,10 +8,7 @@ export class ProjetoController {
     async obterTodos() {
         return await this.proj.obterTodos();
     }
-    @Get(":id")
-    async obterPorId(@Param('id') id:string) {
-        return await this.proj.obterUm(Number(id));
-    }
+
     @Get('destaques')
     async obterDestaques() {
         return await this.proj.obterDestaque();
@@ -31,5 +28,9 @@ export class ProjetoController {
     @Get('experientes')
     async obterExperientes() {
         return await this.proj.obterExperiente();  
+    }
+    @Get(":id")
+    async obterPorId(@Param('id') id:string) {
+        return await this.proj.obterUm(Number(id));
     }
 }
